@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ai/screen/home_screen.dart';
+import 'package:flutter_ai/widget/custom_loading.dart';
 
 import '../helper/global.dart';
 
@@ -27,15 +28,27 @@ class _SplashScreenState extends State<SplashScreen> {
     mq = MediaQuery.sizeOf(context);
 
     return Scaffold(
-      body: Center(
-        child: Card(
-          color: Colors.grey,
-          shape: const RoundedRectangleBorder(
-              borderRadius: BorderRadius.all(Radius.circular(20))),
-          child: Padding(
-            padding: EdgeInsets.all(mq.width * .05),
-            child: Image.asset('assets/images/logo.png', width: mq.width * .4),
-          ),
+      body: SizedBox(
+        width: double.maxFinite,
+        child: Column(
+          children: [
+            Spacer(
+              flex: 2,
+            ),
+            Card(
+              // color: Colors.grey,
+              shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(20))),
+              child: Padding(
+                padding: EdgeInsets.all(mq.width * .05),
+                child:
+                    Image.asset('assets/images/logo.png', width: mq.width * .4),
+              ),
+            ),
+            Spacer(),
+            CustomLoading(),
+            Spacer()
+          ],
         ),
       ),
     );
