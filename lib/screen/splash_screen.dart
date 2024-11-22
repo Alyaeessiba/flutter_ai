@@ -45,9 +45,9 @@ class _SplashScreenState extends State<SplashScreen> {
                     Image.asset('assets/images/logo.png', width: mq.width * .4),
               ),
             ),
-            Spacer(),
-            CustomLoading(),
-            Spacer()
+            const Spacer(),
+            const CustomLoading(),
+            const Spacer()
           ],
         ),
       ),
