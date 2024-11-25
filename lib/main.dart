@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:hive/hive.dart';
-import 'package:path_provider/path_provider.dart';
+// import 'package:hive/hive.dart';
+// import 'package:path_provider/path_provider.dart';
 
 import 'screen/splash_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  Hive.defaultDirectory = (await getApplicationDocumentsDirectory()).path;
+  // Hive.defaultDirectory = (await getApplicationDocumentsDirectory()).path;
 
   await SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
   await SystemChrome.setPreferredOrientations(

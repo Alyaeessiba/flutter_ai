@@ -17,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
     // TODO: implement initState
     super.initState();
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
-    Pref.showOnboarding = false;
+    // Pref.showOnboarding = false;
   }
 
   @override
