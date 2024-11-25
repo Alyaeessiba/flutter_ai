@@ -6,6 +6,6 @@ class Onboard {
       {required this.title,
       required this.subtitle,
       required this.lottie,
-       this.width,
-       this.height});
+      this.width,
+      this.height});
 }
