@@ -3,6 +3,7 @@ import 'package:flutter_ai/screen/home_screen.dart';
 import 'package:flutter_ai/widget/custom_loading.dart';
 
 import '../helper/global.dart';
+import 'onboarding_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -19,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
     Future.delayed(const Duration(seconds: 2), () {
       Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (_) => const HomeScreen()));
+          MaterialPageRoute(builder: (_) => const OnboardingScreen()));
     });
   }
 
@@ -32,7 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
         width: double.maxFinite,
         child: Column(
           children: [
-            Spacer(
+            const Spacer(
               flex: 2,
             ),
             Card(
